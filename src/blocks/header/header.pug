@@ -1,0 +1,72 @@
+.header 
+    .bgrd_wrap
+        img.galaxy(src=require("./img/Nebula.jpg") alt="Галактика")
+    .menu-wrap    
+        //- .logo
+        //-     a.logo__link(href="#")
+        //-         img(src="#", alt="logo")
+        ul.menu#menu
+            li(data-menuanchor="block1").menu__item
+                a.menu__link(href="#block1") Продукция
+                .cssload-wrap
+                    .cssload-container
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        
+                        
+
+            li(data-menuanchor="block2").menu__item
+                a.menu__link(href="#block2") Проекты
+                .cssload-wrap
+                    .cssload-container
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        .cssload-dots
+                        //- .cssload-dots
+                        //- .cssload-dots
+                        //- .cssload-dots
+                        
+                        
+                        
+            li.menu__item
+                a.menu__link Контакты
+                ul.submenu
+                    li.submenu__item
+                        <i class="fas fa-phone-volume"></i>
+                        a.submenu__link(href="tel:7777777") 8 784 64 65
+                    li.submenu__item
+                        <i class="fab fa-whatsapp"></i>
+                        a.submenu__link 8 784 64 65
+                    li.submenu__item
+                        <i class="fas fa-envelope"></i>
+                        a.submenu__link asd@mail.ru
+                    
+
+    .content-wrap
+        //- .background__image
+        //-     img(src=require("") alt="")
+        .title   
+            h1.content__title Солярис
+            //- span.content__title--small мебель
+        .planet
+            .location
+                a.location-marker(href="#" title= "Наш адрес")
+                    i.fas.fa-bullseye
+                .location_pop-up
+                    p.location_pop-up__text
+                        |г. Магнитогорск<br>
+                        |ул. Комсомольская 103
+                
+            img.planet__earth(src=require("./img/earth.png") alt="Earth")
+            img.planet__moon(src=require("./img/moon.png") alt="Moon")

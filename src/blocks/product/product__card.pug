@@ -1,0 +1,57 @@
+
+
+mixin product__card(options)
+   -
+      if(options.position == undefined)
+         var position = ""
+      else
+         position = "position--" + options.position
+
+      if(options.color == undefined)
+         var color = ""
+      else
+         color = "color--" + options.color
+
+      //- if(options.slider == undefined)
+      //-    var slider = "slider--" + options.slider
+      //- else
+      //-    slider = ""
+
+   .card__wrap(class = color, class = position)
+      .card__column.card__column--left  
+         h3.card__title Название
+         p.card__text
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            | Ut corporis alias corrupti debitis at impedit optio culpa,
+            | laudantium, consequatur quia dolor velit. Sequi ad natus
+         form.card__form(action="#" method="POST" autocomplete="off")
+            .label-box
+               label Ваше имя
+            input(type="text" name="first_name" required)
+            .label-box
+               label Ваш телефон
+            input(type="tel" name="phone" required)
+            button.card__btn Купить
+            
+
+      .card__column.card__column--right
+         form
+            .wrapper
+               input(type="radio" name="point" id="slide1" checked="checked")
+               input(type="radio" name="point" id="slide2")
+               input(type="radio" name="point" id="slide3")
+               input(type="radio" name="point" id="slide4")
+               //- input(type="radio" name="point" id="slide5")
+               .slider
+                  .slides.slide1(class ="slide1--" + options.slider)
+                  .slides.slide2(class ="slide2--" +  options.slider)
+                  .slides.slide3(class ="slide3--" +  options.slider)
+                  .slides.slide4(class ="slide4--" +  options.slider)
+                  //- .slides(class ="slide1--" + slider)
+               .controls
+                  label(for="slide1")
+                  label(for="slide2")
+                  label(for="slide3")
+                  label(for="slide4")
+                  //- label(for="slide5")
+         
