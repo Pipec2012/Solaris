@@ -65,8 +65,18 @@
 .menu__link:hover + .cssload-wrap
     opacity 1
 
+
 .menu__item
 	padding: 0 15px
+
+#menu li a, #menu li.active a + .cssload-wrap{
+   opacity 1;
+}
+ 
+/*Стиль элемента списка когда активен соответствующий блок*/
+#menu li.active + .cssload-wrap{
+	opacity 1;
+}
 
 /*   --- Контакты  --- */ 
 
@@ -124,8 +134,8 @@ li > i
 		font-weight: 200
 		font-size: 6rem
 		text-transform: uppercase
-		letter-spacing: 50px
-		margin: 5vw 0 0 0
+		letter-spacing: 2vw
+		margin: 12vh 0 0 0
 		z-index 1
 		// opacity: 0.5
 		background: repeating-linear-gradient(-45deg,#0884ee , #fff)
@@ -137,12 +147,34 @@ li > i
 		margin-left 39vw
 
 .planet
-    position: absolute
-    left 32vw
-    top: 14vw
-    height 50vw
-    width: 50vw
-    // z-index 888
+	position: absolute
+	left 32vw
+	top: 27vh
+	
+	height 50vw
+	width: 50vw
+	min-height: 350px
+	min-width: 350px
+	// z-index 888
+
+.planet img 
+	position: absolute
+	
+.planet__earth
+	width: 70%
+	z-index 1
+
+.planet__moon
+	height 9%
+	// width: 25%
+	left -10vw
+	top: 15vw
+	animation: linear 12s orbita infinite
+	z-index 2
+
+@keyframes orbita
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
 
 .fa-bullseye
 	color: #ff3939
@@ -180,20 +212,29 @@ li > i
 	padding: 15px 20px
 	border-radius: 10px
 	text-align: center
-	font-style: italic
-
+	// font-style: italic
+	
+	
 .location_pop-up__text:before
-	content: " "
+	content: ""
 	width: 1px
 	height: 7vw
 	transform: rotate(95deg)
-	left: 21vw
+	left: 45vh
 	bottom: -2vw
 	z-index: 5
 	background: white
 	position: absolute
+	overflow: hidden
 
-.location-marker:hover + .location_pop-up
+.location-marker:hover .location_pop-up
+	opacity 0.8
+	// animation: zoomIn 0.8s linear;
+	z-index: 6
+	-webkit-animation:zoomIn linear 0.8s
+	animation:zoomIn linear 0.8s
+
+.location-marker:active + .location_pop-up
 	opacity 0.8
 	// animation: zoomIn 0.8s linear;
 	z-index: 6
@@ -239,27 +280,7 @@ li > i
 }
 
 
-.planet img 
-	position: absolute
-	
 
-.planet__earth
-	width: 70%
-	z-index 1
-
-.planet__moon
-	height 9%
-	// width: 25%
-	left -10vw
-	top: 15vw
-	animation: linear 12s orbita infinite
-	z-index 2
-
-	@keyframes orbita
-		from {-webkit-transform: rotate(0deg);}
-		to {-webkit-transform: rotate(360deg);}
-
-        
 
 // 
 

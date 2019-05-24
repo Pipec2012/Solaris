@@ -2,9 +2,9 @@ include ./product__card
 .product
    .product__background
       img(src=require("./img/kosmos.png") alt="Космос")
+
    .product__wrap
       ul.product-list
-         
          
          li.product-list__item
             .product-img__wrap.img__mercury
@@ -21,13 +21,13 @@ include ./product__card
          
          li.product-list__item
             .product-img__wrap.img__earth
-               a.product-list__link(href="#")
+               a.product-list__link
                   img.product-list__img(src=require("./img/egg.png") alt="Кресло")
                   +product__card({color:"earth"})
          
          li.product-list__item
             .product-img__wrap.img__mars
-               a.product-list__link(href="#")
+               a.product-list__link
                   img.product-list__img(src=require("./img/egg.png") alt="Кресло")
                   +product__card({color:"mars"})
          
