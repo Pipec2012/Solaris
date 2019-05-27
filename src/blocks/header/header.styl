@@ -129,32 +129,31 @@ li > i
 	text-align: center 
 	color: white
 	z-index 3
-	h1 
-		font-family: "AvenirLT-Roman"
-		font-weight: 200
-		font-size: 6rem
-		text-transform: uppercase
-		letter-spacing: 2vw
-		margin: 12vh 0 0 0
-		z-index 1
-		// opacity: 0.5
-		background: repeating-linear-gradient(-45deg,#0884ee , #fff)
-		-webkit-background-clip: text
-		-webkit-text-fill-color: transparent
-        
-	.content__title--small
-		font-size: 1.5rem
-		margin-left 39vw
+h1 
+	font-family: "AvenirLT-Roman"
+	font-weight: 200
+	font-size: 6rem
+	text-transform: uppercase
+	letter-spacing: 2vw
+	margin: 12vh 0 0 0
+	z-index 1
+	// opacity: 0.5
+	background: repeating-linear-gradient(-45deg,#0884ee , #fff)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+// .content__title--small
+// 	font-size: 1.5rem
+// 	margin-left 39vw
 
 .planet
 	position: absolute
 	left 32vw
 	top: 27vh
+	// min-height: 600px
+	// min-width: 600px
+	height 50%
+	width: 50%
 	
-	height 50vw
-	width: 50vw
-	min-height: 350px
-	min-width: 350px
 	// z-index 888
 
 .planet img 
@@ -163,6 +162,8 @@ li > i
 .planet__earth
 	width: 70%
 	z-index 1
+	// box-shadow: 0 0 20px black
+	// border-radius: 50%
 
 .planet__moon
 	height 9%
@@ -198,6 +199,7 @@ li > i
 
 .location_pop-up
 	opacity: 0
+	visibility: hidden
 	z-index: 6;
 	position: relative
 
@@ -205,7 +207,7 @@ li > i
 	position: absolute
 	font-size: 1rem
 	// font-weight: italic
-	left -13vw
+	left -200px
 	top: 2vw
 	z-index: 5
 	border: 1px solid
@@ -218,28 +220,28 @@ li > i
 .location_pop-up__text:before
 	content: ""
 	width: 1px
-	height: 7vw
+	height: 100px
 	transform: rotate(95deg)
-	left: 45vh
-	bottom: -2vw
+	left: 320px
+	top -1px
 	z-index: 5
 	background: white
 	position: absolute
-	overflow: hidden
-
-.location-marker:hover .location_pop-up
+.location-marker
+	cursor: pointer
+.location-marker:hover + .location_pop-up
 	opacity 0.8
-	// animation: zoomIn 0.8s linear;
+	visibility: visible
 	z-index: 6
 	-webkit-animation:zoomIn linear 0.8s
 	animation:zoomIn linear 0.8s
 
-.location-marker:active + .location_pop-up
-	opacity 0.8
-	// animation: zoomIn 0.8s linear;
-	z-index: 6
-	-webkit-animation:zoomIn linear 0.8s
-	animation:zoomIn linear 0.8s
+// .location-marker:active + .location_pop-up
+// 	opacity 0.8
+// 	// animation: zoomIn 0.8s linear;
+// 	z-index: 6
+// 	-webkit-animation:zoomIn linear 0.8s
+// 	animation:zoomIn linear 0.8s
 
 @keyframes zoomIn {
   0% {

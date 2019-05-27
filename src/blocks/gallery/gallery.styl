@@ -1,10 +1,44 @@
 .gallery
-   width: 100%
-   height 100vh
-   text-align: center
-   margin: 0 auto
-   display inline
+   background: url(./img/Nebula.jpg) center no-repeat;
+   background-size: cover;
+   width: 100vw;
+   height: 100vh;
 
+/* Основной блок */
+.owl-wrapper-outer {
+	overflow: hidden;
+	}
+
+
+/* 1 квадратик карусели */
+.carousel-element {
+	padding-top: 10vw;
+   margin 0 auto
+   width 60vw
+   height 70vh
+}
+.carousel-element img
+   width: 100%
+   height: 100%
+.owl-pagination {
+   position absolute;
+	left 47% ;
+   /* Выравниваем точки по-середине */
+}
+/* 1 Точка */
+.owl-page {
+	width: 10px;
+	height: 10px;
+	border: 1px solid #777;
+	display: inline-block;
+	background: #777;
+	margin: 10px;
+	border-radius: 5px;
+}
+/* Активная точка */
+.owl-page.active {
+	background: white;
+}
 
 /* clearfix */
 .owl-carousel .owl-wrapper:after {
@@ -56,8 +90,6 @@
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
-
 /* fix */
 .owl-carousel  .owl-wrapper,
 .owl-carousel  .owl-item{
@@ -69,38 +101,3 @@
   -ms-transform: translate3d(0,0,0);
 }
 
-  
-.owl-wrapper-outer {
-	
-	border-radius: 5px;
-	overflow: hidden;
-	height 100vh;
-   // position: absolute;
-   background: url(./img/Nebula.jpg) center no-repeat;
-}
-
-/* 1 квадратик карусели */
-.carousel-element {
-	padding-top: 5vw;
-	text-align: center;
-}
-
-.owl-pagination {
-   position absolute;
-	left 47% ;
-   margin-top: -5vw;/* Выравниваем точки по-середине */
-}
-/* 1 Точка */
-.owl-page {
-	width: 10px;
-	height: 10px;
-	border: 1px solid #777;
-	display: inline-block;
-	background: white;
-	margin: 10px;
-	border-radius: 5px;
-}
-/* Активная точка */
-.owl-page.active {
-	background: #777;
-}

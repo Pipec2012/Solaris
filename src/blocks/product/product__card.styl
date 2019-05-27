@@ -1,9 +1,9 @@
 .card__wrap
-  width: 50vw
-  min-width 600px
+  width 600px
+  height 350px
   // height 20vw
-  top: -51vh
-  // left 4vw
+  top: -400px
+  // left 4vw 
   position absolute
   background: #1b46f8a3
   color #eeeeeebd
@@ -22,15 +22,15 @@
   display block
 .card__text
   margin-top 1vw
-  width 90%
+  width 100%
 
-.card__img
-  margin-top 1vw
-  width: 100%
-  height 90%
-  img
-    width: 100%
-    height 100%
+// .card__img
+//   margin-top 1vw
+//   width: 10vw
+//   height 15vh
+//   img
+//     width: 100%
+//     height 100%
 
 .label-box
   margin-top 0.5vw
@@ -59,7 +59,6 @@ input:hover, :focus
   cursor pointer
   padding: 5px
   width: 40%
-  height 30px
   border: none
   font-size: 18px;
   box-shadow: 0 0.5vw 4vw black
@@ -108,41 +107,41 @@ figcaption
 // Позиционирование карточек 
 
 .position--jupiter
-  left -37vw
-  top -50vh
+  left -400px
 
 .position--saturn
-  left -34vw
-  top -35vh
+  left -350px
+  top -270px
 
 .position--uranus
-  left -46vw
-  // top -40vh
+  left -550px
 
 .position--neptune
-  left -46vw
+  left -570px
 
 
 
 //  ----   Слайдер ----
 
 .wrapper {
-	height: 320px;
+	height: 280px;
+  width 250px
 	margin: 5px auto;
 	position: relative;
-	width: 320px;
 }
 
 .slider {
-	background-color: #ddd;
+  min-width 200px;
+  padding: 5px
+	// background-color: #ddd;
 	height: inherit;
 	overflow: hidden;
 	position: relative;
 	width: inherit;
-	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	// -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	// -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	// -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	// box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
 .wrapper > input {
@@ -153,21 +152,23 @@ figcaption
 	height: inherit;
 	position: absolute;
 	width: inherit;
+  width: 100%
+  height 100%
 }
 
 .wrapper .controls {
-	left: 50%;
-	margin-left: -98px;
+	left 18%
 	position: absolute;
 }
 
 .wrapper label {
 	cursor: pointer;
 	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
+  height 10px
+  width: 10px
+  margin: 4px 12px 0 4px;
 	position: relative;
-	width: 8px;
+	
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -178,11 +179,13 @@ figcaption
 	border: 2px solid #ddd;
 	content: " ";
 	display: block;
-	height: 12px;
-	left: -4px;
+	// height: 12px;
+  height 14px
+  width: 14px
+  top: -1.5px
+  left  -1.5px
 	position: absolute;
-	top: -4px;
-	width: 12px;
+	// width: 12px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -192,10 +195,12 @@ figcaption
 .wrapper label {
 	cursor: pointer;
 	display: inline-block;
-	height: 8px;
+  height 14px
+  width: 14px
+	// height: 8px;
 	margin: 25px 12px 0 16px;
 	position: relative;
-	width: 8px;
+	// width: 8px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;

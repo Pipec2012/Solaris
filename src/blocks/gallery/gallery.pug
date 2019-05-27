@@ -1,8 +1,11 @@
 
-.gallery#carousel
-   img.carousel-element(src=require("./img/kreslo-shar.jpg") alt="Кресло шар")
-   img.carousel-element(src=require("./img/chair-bubble.jpg") alt="Кресло шар")
-   img.carousel-element(src=require("./img/chair-bubble.jpg") alt="Кресло шар")
+.gallery
+   #carousel
+      .carousel-element
+         img(src=require("./img/kreslo-shar.jpg") alt="Кресло шар")
+      .carousel-element
+         img(src=require("./img/chair-bubble.jpg") alt="Кресло шар")
+      
    //- .tabs
    //-    input(type="button" class="prev" value="Назад")
    //-    input(type="button" class="next" value="Вперед")
