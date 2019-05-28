@@ -3,8 +3,6 @@
    height: 100vh
    overflow: hidden
    
-.section
-   position: relative
 .product__background
    
    // opacity 0.8
@@ -19,8 +17,10 @@
 
 .product-list
    position: relative
-   top: 72vh
-   // transform: rotate(90deg)
+   margin-top: 320px
+   display: flex
+   justify-content: space-around
+   align-items: center
 
 .product-list__img
    width: 70%
@@ -29,6 +29,7 @@
    margin: 20% auto
    animation: rotation 9s infinite linear
    cursor: pointer
+   position: relative
    // box-shadow: -0.5vw -1vw 2vw white
    // border-radius: 50%
 
@@ -64,85 +65,81 @@
 // .product-list__link:focus  div
 //    opacity 1
 //    visibility: visible
-
 .product-img__wrap
-   position: absolute
-   box-shadow: inset -0.5vw -3vw 3vw black
-   border-radius: 50%
+   padding-top: 10px
+   
 
 .img__mercury
-   // top 33vw
-   left: 3vw
    width: 9vw
    height 9vw
+   // min-width 150px
+   // min-height: 150px
    background: url(./img/mercury.png) center no-repeat
-   background-size: cover  
-
-.img__venus
-   top -2vw
-   left: 13vw
-   width: 12vw
-   height 12vw
-   background: url(./img/venus.png) center no-repeat
-   background-size: cover
-   
-.img__earth
-   top -1.5vw
-   left: 26vw
-   width: 11vw   
-   height 11vw
-   background: url(./img/earth-card.png) center no-repeat
-   background-size: 115%
-
-.img__mars
-   top -1vw
-   left: 38vw
-   width: 10vw   
-   height 10vw
-   background: url(./img/mars.png) center no-repeat
-   background-size: 108%
-
-.img__jupiter
-   top -4vw
-   left: 49vw
-   width: 17vw   
-   height 17vw
-   background: url(./img/jupiter.png) center no-repeat
-   background-size: 108%
-
-.img__saturn
-   top -11vw
-   left: 58vw
-   width: 30vw   
-   height 30vw
-   background: url(./img/saturn.png) center no-repeat
    background-size: contain
    box-shadow: none
+
+.img__venus
+   width: 12vw
+   height 12vw
+   // min-width 150px
+   // min-height: 150px
+   background: url(./img/venus.png) center no-repeat
+   background-size: contain
+   
+.img__earth
+   width: 11vw   
+   height 11vw
+   // min-width 150px
+   // min-height: 150px
+   background: url(./img/earth-card.png) center no-repeat
+   background-size: contain
+
+.img__mars
+   width: 10vw   
+   height 10vw
+   // min-width 150px
+   // min-height: 150px
+   background: url(./img/mars.png) center no-repeat
+   background-size: contain
+
+.img__jupiter
+   width: 17vw   
+   height 17vw
+   // min-width 150px
+   // min-height: 150px
+   background: url(./img/jupiter.png) center no-repeat
+   background-size: contain
+
+.img__saturn
+   width: 27vw   
+   height 27vw
+   // min-width 150px
+   // min-height: 150px
+   background: url(./img/saturn.png) center no-repeat
+   background-size: contain
+   padding-top 150px
+   margin: 0 -7vw
 
 
 .img__uranus
-   top 0.5vw
-   left: 80vw
    width: 8vw   
    height 8vw
+   // min-width 150px
+   // min-height: 150px
    background: url(./img/uranus.png) center no-repeat
    background-size: contain
-   box-shadow: none
 
 .img__neptune
-   top 1vw
-   left: 89vw
    width: 7vw   
    height 7vw
+   // min-width 150px
+   // min-height: 150px
    background: url(./img/neptune.png) center no-repeat
    background-size: contain
-   box-shadow: none
 
 .img--position
    width 10vw
    height 10vw
-   margin 0
-   position: absolute
-   top 11vw
-   left 10vw
+   
+   
    

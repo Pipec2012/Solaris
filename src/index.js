@@ -24,7 +24,7 @@ $(function () {
             anchors: ['block0','block1', 'block2', 'block3', 'block4'],
             menu: '#menu',
             css3: true,
-            
+            scrollHorizontally: false,
             scrollingSpeed: 1000,
             touchSensitivity: 10
         });
@@ -33,20 +33,24 @@ $(function () {
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
-        nav:true,
+        responsiveClass:true,
         responsive:{
             0:{
-                items:1
+                items:1,
+                nav:true
             },
             600:{
-                items:1
+                items:1,
+                nav:false
             },
             1000:{
-                items:2
+                items:3,
+                nav:true,
+                loop:true
             }
         }
     })
-        
+
     
     // $(document).ready(function(){
     //     if($(window).width() <= 950){

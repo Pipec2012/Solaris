@@ -4,12 +4,12 @@ include ./product__card
       img(src=require("./img/kosmos.png") alt="Космос")
 
    ul.product-list
-      div
-         li.product-list__item
-            .product-img__wrap.img__mercury
-               a.product-list__link.img__mercury
-                  img.product-list__img(src=require("./img/egg.png") alt="Кресло")
-                  +product__card({color:"mercury", slider:"mercury"})
+      
+      li.product-list__item
+         .product-img__wrap.img__mercury
+            a.product-list__link
+               img.product-list__img(src=require("./img/egg.png") alt="Кресло")
+               +product__card({color:"mercury", slider:"mercury"})
       
       li.product-list__item
          .product-img__wrap.img__venus 
