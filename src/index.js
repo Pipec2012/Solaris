@@ -30,20 +30,39 @@ $(function () {
         });
     });
     
-    $(document).ready(function(){
-	
-        // Находим блок карусели
-        var carousel = $("#carousel");
-    
-        // Запускаем плагин карусели
-        carousel.owlCarousel({
-            singleItem: true, // Показывать только 1 блок на всю ширину
-            
-            pagination: true,// Точки под каруселью
-            // itemsMobile:[900, 3],
-        });
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:2
+            }
+        }
+    })
         
-    });
+    
+    // $(document).ready(function(){
+    //     if($(window).width() <= 950){
+    //     // Находим блок карусели
+    //     var carousel = $("#product-carousel");
+    
+    //     // Запускаем плагин карусели
+    //     carousel.owlCarousel({
+    //         // singleItem: true, // Показывать только 1 блок на всю ширину
+    //         items: 3,
+    //         pagination: true,// Точки под каруселью
+    //     });
+    // } else {
+    //     owl.addClass('off');
+    // }
+    // });
 });
 
     
