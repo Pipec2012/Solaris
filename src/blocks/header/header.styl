@@ -4,15 +4,14 @@
     a
         color: #fff
 
-.bgrd_wrap
+.header__background
+	background: url("./img/Nebula.jpg") center no-repeat
+	background-size: cover
 	position: absolute
 	z-index: -2
 	height: 100vh
 	width: 100%  
-	img 
-		width: 100%
-		height: 100%
-		z-index: -2
+	
 
 .logo
 	position: absolute
@@ -146,30 +145,33 @@ h1
 // 	margin-left 39vw
 
 .planet
-	position: absolute
-	left 32vw
-	top: 27vh
+	position: relative
+	display: flex
+	justify-content: center
 	// min-height: 600px
 	// min-width: 600px
-	height 50%
-	width: 50%
+	height 100%
+	width: 100%
 	
 	// z-index 888
 
-.planet img 
-	position: absolute
 	
 .planet__earth
-	width: 70%
+	width: 30%
+	height: 30%
+	min-width: 450px
 	z-index 1
 	// box-shadow: 0 0 20px black
 	// border-radius: 50%
 
 .planet__moon
-	height 20%
+	position: absolute
+	height 7vw
+	min-height: 18%
+	max-height: 20%
 	// width: 25%
-	left -10vw
-	top: 15vw
+	left 22vw
+	top: 10vw
 	animation: linear 12s orbita infinite
 	z-index 2
 
@@ -184,8 +186,8 @@ h1
 	animation: glowing 2.5s linear infinite
 	position: absolute
 	font-size: 1.1rem
-	left 13vw
-	top: 5.5vw
+	left 47vw
+	top: 13vh
 	z-index: 5
 	opacity: 0.9
 	border-radius: 50%
@@ -207,12 +209,13 @@ h1
 	position: absolute
 	font-size: 1rem
 	// font-weight: italic
-	left -200px
-	top: 2vw
+	left -230px
+	top: 2.5vw
 	z-index: 5
 	border: 1px solid
-	padding: 15px 20px
+	padding: 10px 10px
 	border-radius: 10px
+	width: 15vw
 	text-align: center
 	// font-style: italic
 	
@@ -222,8 +225,8 @@ h1
 	width: 1px
 	height: 100px
 	transform: rotate(95deg)
-	left: 320px
-	top -1px
+	left: 310px
+	// top 0.5vw
 	z-index: 5
 	background: white
 	position: absolute

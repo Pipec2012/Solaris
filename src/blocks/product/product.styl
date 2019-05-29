@@ -1,35 +1,33 @@
 
 .product
-   height: 100vh
+   // height: 100vh
    overflow: hidden
    
 .product__background
-   
-   // opacity 0.8
-   z-index -2
-   position absolute
-   height: 100%
-   width: 100% 
-   img 
-      width: 100%
-      height: 100%
-      z-index: -2
+   background: url("./img/kosmos.png") center no-repeat
+   background-size: cover
+   position: absolute
+   // z-index: -2
+   height: 100vh
+   width: 100%  
 
 .product-list
    position: relative
    margin-top: 320px
    display: flex
-   justify-content: space-around
+   justify-content: space-between
    align-items: center
+   padding: 0 10px 0 10px
 
 .product-list__img
    width: 70%
    height 70%
    display: block
-   margin: 20% auto
+   margin:0 auto
    animation: rotation 9s infinite linear
    cursor: pointer
    position: relative
+   z-index: 5
    // box-shadow: -0.5vw -1vw 2vw white
    // border-radius: 50%
 
@@ -57,6 +55,8 @@
    from {-webkit-transform: rotate(0deg);}
    to {-webkit-transform: rotate(360deg);}
 
+// .product-list__link
+//    i
 
 .product-list__link:hover .card__wrap
       opacity 1
@@ -66,74 +66,76 @@
 //    opacity 1
 //    visibility: visible
 .product-img__wrap
-   padding-top: 10px
+   padding-top: 50px
    
 
 .img__mercury
    width: 9vw
    height 9vw
-   // min-width 150px
-   // min-height: 150px
+   // min-width 110px
+   // min-height: 110px
    background: url(./img/mercury.png) center no-repeat
    background-size: contain
    box-shadow: none
+   margin-right 5px
 
 .img__venus
    width: 12vw
    height 12vw
-   // min-width 150px
-   // min-height: 150px
+   // min-width 121px
+   // min-height: 110px
    background: url(./img/venus.png) center no-repeat
    background-size: contain
    
 .img__earth
    width: 11vw   
    height 11vw
-   // min-width 150px
-   // min-height: 150px
+   // min-width 110px
+   // min-height: 110px
    background: url(./img/earth-card.png) center no-repeat
    background-size: contain
 
 .img__mars
    width: 10vw   
    height 10vw
-   // min-width 150px
-   // min-height: 150px
+   // min-width 110px
+   // min-height: 110px
    background: url(./img/mars.png) center no-repeat
    background-size: contain
 
 .img__jupiter
    width: 17vw   
    height 17vw
-   // min-width 150px
-   // min-height: 150px
+   // min-width 110px
+   // min-height: 110px
    background: url(./img/jupiter.png) center no-repeat
    background-size: contain
+   padding-top 100px
 
 .img__saturn
-   width: 27vw   
-   height 27vw
-   // min-width 150px
-   // min-height: 150px
+   width: 20vw   
+   height 20vw
+   // min-width 110px
+   // min-height: 110px
    background: url(./img/saturn.png) center no-repeat
    background-size: contain
-   padding-top 150px
-   margin: 0 -7vw
+   padding-top 170px
+   margin: 0 -4vw
 
 
 .img__uranus
    width: 8vw   
    height 8vw
-   // min-width 150px
-   // min-height: 150px
+   // min-width 110px
+   // min-height: 110px
    background: url(./img/uranus.png) center no-repeat
    background-size: contain
 
 .img__neptune
    width: 7vw   
    height 7vw
-   // min-width 150px
-   // min-height: 150px
+   // min-width 110px
+   // min-height: 110px
    background: url(./img/neptune.png) center no-repeat
    background-size: contain
 

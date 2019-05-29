@@ -20,14 +20,22 @@ $(function () {
     
 
     $(document).ready(function() {
-        $('#fullpage').fullpage({
-            anchors: ['block0','block1', 'block2', 'block3', 'block4'],
-            menu: '#menu',
-            css3: true,
-            scrollHorizontally: false,
-            scrollingSpeed: 1000,
-            touchSensitivity: 10
-        });
+        if($(window).width() >= 700){
+            $('#fullpage').fullpage({
+                anchors: ['block0','block1', 'block2', 'block3', 'block4'],
+                menu: '#menu',
+                css3: true,
+                scrollHorizontally: false,
+                scrollingSpeed: 1000,
+                touchSensitivity: 10
+            });
+        } 
+        // else {
+        //     $('#fullpage').fullpage({
+        //         scrollOverflow: false,
+        //         resize : false
+        //     });
+        // }
     });
     
     $('.owl-carousel').owlCarousel({
@@ -39,11 +47,11 @@ $(function () {
                 items:1,
                 nav:true
             },
-            600:{
-                items:1,
-                nav:false
+            768:{
+                items:2,
+                nav:true
             },
-            1000:{
+            950:{
                 items:3,
                 nav:true,
                 loop:true
