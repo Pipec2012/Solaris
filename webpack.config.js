@@ -75,7 +75,7 @@ module: {
                             enabled: false,
                         },
                         pngquant: {
-                            quality: '65-90',
+                            quality: '80-90',
                             speed: 4
                         },
                         gifsicle: {
