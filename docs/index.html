@@ -43,13 +43,14 @@
           </div>
         </div>
       </li>
-      <li class="menu__item"><a class="menu__link">Контакты</a>
+      <li class="menu__item"><a class="menu__link">Контакты</a></li>
+      <div class="submenu__wrap">  
         <ul class="submenu">
           <li class="submenu__item"><i class="fas fa-phone-volume"></i><a class="submenu__link" href="tel:7777777">8 784 64 65</a></li>
           <li class="submenu__item"><i class="fab fa-whatsapp"></i><a class="submenu__link">8 784 64 65</a></li>
           <li class="submenu__item"><i class="fas fa-envelope"></i><a class="submenu__link">asd@mail.ru</a></li>
         </ul>
-      </li>
+      </div>
     </ul>
   </div>
   <div class="content-wrap">
@@ -69,16 +70,17 @@
   </div>
 </div>
     </div>
-    <div class="section" data-anchor="block1" id="product">
+    <div class="section product__1" data-anchor="block1">
       <div class="product product__background">
         <ul class="product-list">
           <li class="product-list__item">
             <div class="product-img__wrap img__mercury"><a class="product-list__link"><img class="product-list__img" src="./img/egg.png" alt="Кресло">
                       <div class="card__wrap color--mercury">
+                        <div class="note"></div>
                         <div class="card__column card__column--left"> 
                           <h3 class="card__title">Название</h3>
                           <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          <form class="card__form" action="#" method="POST" autocomplete="off">
+                          <form class="card__form" id="form" action="#" method="POST" autocomplete="off">
                             <div class="label-box">
                               <label>Ваше имя</label>
                             </div>
@@ -87,7 +89,7 @@
                               <label>Ваш телефон</label>
                             </div>
                             <input type="tel" name="phone" required>
-                            <button class="card__btn">Купить</button>
+                            <button class="card__btn" type="submit">Купить</button>
                           </form>
                         </div>
                         <div class="card__column card__column--right">
@@ -117,10 +119,11 @@
           <li class="product-list__item">
             <div class="product-img__wrap img__venus"> <a class="product-list__link"><img class="product-list__img" src="./img/egg.png" alt="Кресло">
                       <div class="card__wrap color--venus">
+                        <div class="note"></div>
                         <div class="card__column card__column--left"> 
                           <h3 class="card__title">Название</h3>
                           <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          <form class="card__form" action="#" method="POST" autocomplete="off">
+                          <form class="card__form" id="form" action="#" method="POST" autocomplete="off">
                             <div class="label-box">
                               <label>Ваше имя</label>
                             </div>
@@ -129,7 +132,7 @@
                               <label>Ваш телефон</label>
                             </div>
                             <input type="tel" name="phone" required>
-                            <button class="card__btn">Купить</button>
+                            <button class="card__btn" type="submit">Купить</button>
                           </form>
                         </div>
                         <div class="card__column card__column--right">
@@ -159,10 +162,11 @@
           <li class="product-list__item">
             <div class="product-img__wrap img__earth"><a class="product-list__link"><img class="product-list__img" src="./img/egg.png" alt="Кресло">
                       <div class="card__wrap color--earth">
+                        <div class="note"></div>
                         <div class="card__column card__column--left"> 
                           <h3 class="card__title">Название</h3>
                           <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          <form class="card__form" action="#" method="POST" autocomplete="off">
+                          <form class="card__form" id="form" action="#" method="POST" autocomplete="off">
                             <div class="label-box">
                               <label>Ваше имя</label>
                             </div>
@@ -171,7 +175,7 @@
                               <label>Ваш телефон</label>
                             </div>
                             <input type="tel" name="phone" required>
-                            <button class="card__btn">Купить</button>
+                            <button class="card__btn" type="submit">Купить</button>
                           </form>
                         </div>
                         <div class="card__column card__column--right">
@@ -201,10 +205,11 @@
           <li class="product-list__item">
             <div class="product-img__wrap img__mars"><a class="product-list__link"><img class="product-list__img" src="./img/egg.png" alt="Кресло">
                       <div class="card__wrap color--mars position--mars">
+                        <div class="note"></div>
                         <div class="card__column card__column--left"> 
                           <h3 class="card__title">Название</h3>
                           <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          <form class="card__form" action="#" method="POST" autocomplete="off">
+                          <form class="card__form" id="form" action="#" method="POST" autocomplete="off">
                             <div class="label-box">
                               <label>Ваше имя</label>
                             </div>
@@ -213,7 +218,7 @@
                               <label>Ваш телефон</label>
                             </div>
                             <input type="tel" name="phone" required>
-                            <button class="card__btn">Купить</button>
+                            <button class="card__btn" type="submit">Купить</button>
                           </form>
                         </div>
                         <div class="card__column card__column--right">
@@ -243,10 +248,11 @@
           <li class="product-list__item">
             <div class="product-img__wrap img__jupiter"><a class="product-list__link"><img class="product-list__img" src="./img/egg.png" alt="Кресло">
                       <div class="card__wrap color--jupiter position--jupiter">
+                        <div class="note"></div>
                         <div class="card__column card__column--left"> 
                           <h3 class="card__title">Название</h3>
                           <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          <form class="card__form" action="#" method="POST" autocomplete="off">
+                          <form class="card__form" id="form" action="#" method="POST" autocomplete="off">
                             <div class="label-box">
                               <label>Ваше имя</label>
                             </div>
@@ -255,7 +261,7 @@
                               <label>Ваш телефон</label>
                             </div>
                             <input type="tel" name="phone" required>
-                            <button class="card__btn">Купить</button>
+                            <button class="card__btn" type="submit">Купить</button>
                           </form>
                         </div>
                         <div class="card__column card__column--right">
@@ -285,10 +291,11 @@
           <li class="product-list__item">
             <div class="product-img__wrap img__saturn"><a class="product-list__link"><img class="product-list__img img--size" src="./img/egg.png" alt="Кресло">
                       <div class="card__wrap color--saturn position--saturn">
+                        <div class="note"></div>
                         <div class="card__column card__column--left"> 
                           <h3 class="card__title">Название</h3>
                           <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          <form class="card__form" action="#" method="POST" autocomplete="off">
+                          <form class="card__form" id="form" action="#" method="POST" autocomplete="off">
                             <div class="label-box">
                               <label>Ваше имя</label>
                             </div>
@@ -297,7 +304,7 @@
                               <label>Ваш телефон</label>
                             </div>
                             <input type="tel" name="phone" required>
-                            <button class="card__btn">Купить</button>
+                            <button class="card__btn" type="submit">Купить</button>
                           </form>
                         </div>
                         <div class="card__column card__column--right">
@@ -327,10 +334,11 @@
           <li class="product-list__item">
             <div class="product-img__wrap img__uranus"><a class="product-list__link"><img class="product-list__img" src="./img/egg.png" alt="Кресло">
                       <div class="card__wrap color--uranus position--uranus">
+                        <div class="note"></div>
                         <div class="card__column card__column--left"> 
                           <h3 class="card__title">Название</h3>
                           <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          <form class="card__form" action="#" method="POST" autocomplete="off">
+                          <form class="card__form" id="form" action="#" method="POST" autocomplete="off">
                             <div class="label-box">
                               <label>Ваше имя</label>
                             </div>
@@ -339,7 +347,7 @@
                               <label>Ваш телефон</label>
                             </div>
                             <input type="tel" name="phone" required>
-                            <button class="card__btn">Купить</button>
+                            <button class="card__btn" type="submit">Купить</button>
                           </form>
                         </div>
                         <div class="card__column card__column--right">
@@ -369,10 +377,11 @@
           <li class="product-list__item">
             <div class="product-img__wrap img__neptune"><a class="product-list__link"><img class="product-list__img" src="./img/egg.png" alt="Кресло">
                       <div class="card__wrap color--neptune position--neptune">
+                        <div class="note"></div>
                         <div class="card__column card__column--left"> 
                           <h3 class="card__title">Название</h3>
                           <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          <form class="card__form" action="#" method="POST" autocomplete="off">
+                          <form class="card__form" id="form" action="#" method="POST" autocomplete="off">
                             <div class="label-box">
                               <label>Ваше имя</label>
                             </div>
@@ -381,7 +390,7 @@
                               <label>Ваш телефон</label>
                             </div>
                             <input type="tel" name="phone" required>
-                            <button class="card__btn">Купить</button>
+                            <button class="card__btn" type="submit">Купить</button>
                           </form>
                         </div>
                         <div class="card__column card__column--right">
