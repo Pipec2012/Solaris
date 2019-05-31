@@ -101,7 +101,7 @@ $(function () {
         
         $.ajax({
         type: "POST",
-        url: "https://pipec2012.github.io/Solaris/contact.php",
+        url: "https://pipec2012.github.io/Solaris12/contact.php",
         data: str,
         success: function(msg) {
             if(msg == 'OK') {
