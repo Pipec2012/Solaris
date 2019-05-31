@@ -78,29 +78,31 @@
 }
 
 /*   --- Контакты  --- */ 
-
-.submenu
-	margin-top: 0.5vw
+.submenu__wrap
 	opacity: 0
 	visibility: hidden
-	background: white
-	box-shadow: 0 0 5px black
-	border-radius: 10px
-	padding: 20px 40px
 	position: absolute
+.submenu
+	margin-top: 3.5vw
+	background: rgba(31, 32, 65, 0.25)
+	z-index: 15
+	height: 45px
+	position: relative
 	font-size: 1.1rem
-	font-weight: bold
-	text-align: left
+	font-weight: 400
 	display: flex
-	flex-wrap: wrap
-	margin-left: -4vw
+	flex-wrap: nowrap
+	align-items: center
+	justify-content: center
+	// left: 4.5vw
 	// top: 2vw
 	letter-spacing: 0
 
 .submenu__link
-	color: black
+	color: white
 	cursor: pointer
 	margin-left: 0.5vw
+	z-index: 15
 li > i
 	width: 25px
 .fa-phone-volume
@@ -111,16 +113,12 @@ li > i
 	color: #ff6f6f
 
 .submenu__item
-	margin-top: 1vw
-
-.submenu__item:first-child
-	margin-top: 0
-
-.menu__item:hover .submenu
+	width: 200px
+.menu__item:hover + .submenu__wrap
 	opacity: 1
 	visibility: visible
 	transition-duration: 0.9s
-	margin-bottom: 1vw
+	// margin-bottom: 1vw
 
 
 /*   --- Контент  --- */ 
@@ -134,7 +132,7 @@ h1
 	font-size: 6rem
 	text-transform: uppercase
 	letter-spacing: 2vw
-	margin: 12vh 0 0 0
+	margin: 15vh 0 0 0
 	z-index 1
 	// opacity: 0.5
 	background: repeating-linear-gradient(-45deg,#0884ee , #fff)
@@ -306,6 +304,7 @@ h1
 .cssload-dots {
 	display: inline-block;
 	position: relative;
+	
 }
 .cssload-dots:not(:last-child) {
 	margin-right: 9px;
