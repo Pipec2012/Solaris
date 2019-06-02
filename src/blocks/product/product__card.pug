@@ -23,14 +23,14 @@ mixin product__card(options)
          h3.card__title Название
          p.card__text
             | Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         form#form.card__form(action="#" method="POST" autocomplete="off")
+         form#form.card__form(autocomplete="off")
             .label-box
                label Ваше имя
-            input(type="text" name="first_name" required)
+            input(type="text" name="name" required)
             .label-box
                label Ваш телефон
             input(type="tel" name="phone" required)
-            button(type="submit").card__btn Купить
+            button.card__btn Купить
             
 
       .card__column.card__column--right
