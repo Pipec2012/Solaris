@@ -38,9 +38,6 @@ import "./owl.carousel.min.js";
 //     }, animationTime / framesCount);
 //   });
 // });
-
-
-  
 $(function () {
     // $.firefly({
     //     color: '#fff',
@@ -50,7 +47,7 @@ $(function () {
     //     on: '#firefly',
     //     borderRadius: 50
     // });
-    $("html,body").animate({scrollTop:0},500);
+    // $("html,body").animate({scrollTop:0},500);
 
     $(document).ready(function() {
         if($(window).width() >= 700){
@@ -97,25 +94,17 @@ $(function () {
         }
     })
     $("#form").submit(function() {
-        var str = $(this).serialize();
-        
-        $.ajax({
-        type: "POST",
-        url: "https://pipec2012.github.io/Solaris12/contact.php",
-        data: str,
-        success: function(msg) {
-            if(msg == 'OK') {
-            result = '<p>Ваш заказ принят</p>';
-            $(".fields").hide();
-        } else {
-            result = msg;
-        }
-        $('.note').html(result);
-        }
-            });
-                return false;
-            });
-        
+		$.ajax({
+			type: "POST",
+			url: "https://pipec2012.github.io/Solaris12/mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form").trigger("reset");
+		});
+		return false;
+	});
     // if($(window).width() <= 700){
         
     // } 
