@@ -6,6 +6,7 @@ import "./jquery.fullPage.min.js";
 // import "./blocks/gallery/gallery";
 import "./owl.carousel.min.js";
 
+
 // const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
 //       animationTime = 300,
 //       framesCount = 20;
@@ -39,6 +40,8 @@ import "./owl.carousel.min.js";
 //   });
 // });
 $(function () {
+
+    
     // $.firefly({
     //     color: '#fff',
     //     minPixel: 1,
