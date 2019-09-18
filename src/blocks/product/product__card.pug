@@ -1,6 +1,6 @@
 
 
-mixin product__card(options)
+mixin product__card(options, slider)
    -
       if(options.position == undefined)
          var position = ""
@@ -18,39 +18,47 @@ mixin product__card(options)
       //-    slider = ""
 
    .card__wrap(class = color, class = position)
-      .note
+      
       .card__column.card__column--left  
-         h3.card__title Название
-         p.card__text
-            | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         h3.card__title BUBBLE CHAIR 
+         p.addit__title (Кресло пузырь)<br>подвесное к потолку
+         ul.card__text
+            li - Материал подушек: эко-кожа, натуральная кожа, ткань на выбор. 
+            li - Цвета обсуждаются индивидуально. 
+            li - Длина цепи 1,5 метра.
+            li - Максимальная нагрузка 150 кг.
+            li - Диаметр: 110 см. 
+            li - Глубина кресла: 70 см. 
+            li - Вес: 31 кг.
          form#form.card__form(autocomplete="off")
-            .label-box
-               label Ваше имя
-            input(type="text" name="name" required)
-            .label-box
-               label Ваш телефон
-            input(type="tel" name="phone" required)
+            
+            input(type="text" name="name" placeholder="Ваше имя" required)
+            
+            input(type="tel" name="phone" placeholder="Ваш телефон" required)
             button.card__btn Купить
             
 
       .card__column.card__column--right
-         form
-            .wrapper
-               input(type="radio" name="point" id="slide1" checked="checked")
-               input(type="radio" name="point" id="slide2")
-               input(type="radio" name="point" id="slide3")
-               input(type="radio" name="point" id="slide4")
-               //- input(type="radio" name="point" id="slide5")
-               .slider
-                  .slides.slide1(class ="slide1--" + options.slider)
-                  .slides.slide2(class ="slide2--" +  options.slider)
-                  .slides.slide3(class ="slide3--" +  options.slider)
-                  .slides.slide4(class ="slide4--" +  options.slider)
-                  //- .slides(class ="slide1--" + slider)
-               .controls
-                  label(for="slide1")
-                  label(for="slide2")
-                  label(for="slide3")
-                  label(for="slide4")
-                  //- label(for="slide5")
-         
+         .slider_2
+            - var x = 3
+            - var num = 0
+            - for (var i=1; i<=x; i++) {
+            
+             - num += 1;
+               - imgSlider = options.slider
+               - if(num === 1)
+                  .item
+                     img(src='img/'+ imgSlider + '.jpg' alt='text').slide-img 
+               -   else
+                  .item
+                     img(src='img/'+ imgSlider + i + '.jpg' alt='text').slide-img
+            -}
+                  
+            
+            .arrows_wrapper 
+               .arrow
+                  i.fas.fa-chevron-circle-left#prev
+               .arrow
+                  i.fas.fa-chevron-circle-right#next
+            .price
+               span 25 000 руб
