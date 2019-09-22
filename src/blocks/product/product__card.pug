@@ -40,7 +40,7 @@ mixin product__card(options, slider)
 
       .card__column.card__column--right
          .slider_2
-            - var x = 3
+            - var x = 1
             - var num = 0
             - for (var i=1; i<=x; i++) {
             
@@ -48,17 +48,17 @@ mixin product__card(options, slider)
                - imgSlider = options.slider
                - if(num === 1)
                   .item
-                     img(src='img/'+ imgSlider + '.jpg' alt='text').slide-img 
+                     img(src='img/'+ 'card__' + imgSlider + '.png' alt='text').slide-img 
                -   else
                   .item
-                     img(src='img/'+ imgSlider + i + '.jpg' alt='text').slide-img
+                     img(src='img/'+ 'card__' + imgSlider + i + '.png' alt='text').slide-img
             -}
                   
             
-            .arrows_wrapper 
-               .arrow
-                  i.fas.fa-chevron-circle-left#prev
-               .arrow
-                  i.fas.fa-chevron-circle-right#next
+            //- .arrows_wrapper 
+            //-    .arrow
+            //-       i.fas.fa-chevron-circle-left#prev
+            //-    .arrow
+            //-       i.fas.fa-chevron-circle-right#next
             .price
                span 25 000 руб

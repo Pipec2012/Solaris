@@ -1,6 +1,6 @@
 
 import "./style.styl";
-import "./product__card.js";
+import "./blocks/product/product";
 import "./jquery.firefly-0.7.min.js";
 import "../node_modules/jquery/dist/jquery.js";
 import "../node_modules/jquery/dist/jquery.min.js";
@@ -61,7 +61,6 @@ $(function () {
     })
 
    
-    
    
 // let selectedTd;
 
@@ -85,7 +84,7 @@ $(function () {
     $("#form").submit(function() {
 		$.ajax({
 			type: "POST",
-			url: "https://pipec2012.github.io/Solaris12/mail.php",
+			url: "http://solarischair.ru/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");

@@ -86,16 +86,17 @@
 	transition-delay: 0.5s
 .submenu
 	
-	background: rgba(31, 32, 65, 0.25)
+	background: rgba(0, 0, 0, 0.55)
 	z-index: 15
-	height: 45px
+	height: 205px
 	position: relative
 	font-size: 1rem
 	font-weight: 400
 	display: flex
-	flex-wrap: nowrap
+	flex-wrap: wrap 
 	align-items: center
 	justify-content: center
+	width: 80vw
 	// left: 4.5vw
 	// top: 2vw
 	letter-spacing: 0
@@ -105,6 +106,7 @@
 	cursor: pointer
 	margin-left: 0.5vw
 	z-index: 15
+	
 li > i
 	width: 25px
 .fa-phone-volume
@@ -113,15 +115,25 @@ li > i
 	color: #07be1f
 .fa-envelope
 	color: #ff6f6f
+.fa-vk
+	color: #597da3
+.fa-instagram
+	color: #fc032f
+.fa-facebook-f
+	color: #3b5998
+
 
 .submenu__item
 	box-sizing: content-box
 	margin-left: 50px
+	width: 33%
+	
 .menu__item:hover + .submenu__wrap,
 .submenu__wrap:hover
 	opacity: 1
 	visibility: visible
 	transition-delay: 50ms
+	box-shadow: 0 0 0 2500px rgba(0, 0, 0, 0.3)
 	// margin-bottom: 1vw
 #c
 	position: absolute
