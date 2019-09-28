@@ -26,14 +26,12 @@ $(function () {
     $(document).ready(function() {
         if($(window).width() >= 700){
             $('#fullpage').fullpage({
-                anchors: ['block0','block1', 'block2', 'block3', 'block4'],
+                anchors: ['home','product', 'project', 'block3', 'block4'],
                 menu: '#menu',
                 css3: true,
                 scrollHorizontally: false,
                 scrollingSpeed: 1000,
-                touchSensitivity: 10,
-                loopTop: true,
-                loopBottom: true
+                touchSensitivity: 10
             });
         } 
         

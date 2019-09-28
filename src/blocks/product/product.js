@@ -2,7 +2,7 @@
 
    var backgrounds = ['./assets/solaris/img/mercury.png','./assets/solaris/img/chair-bubble.jpg']
    var planet_image = document.querySelector('.img__mercury');
-   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 2 * 1000;
+   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 4 * 1000;
    var currentImage = 0;
    (function showNextImage() {
       
@@ -22,7 +22,7 @@
    './assets/solaris/img/venus.png',
    './assets/solaris/img/card__venus.jpg']
    var planet_image_1  = document.querySelector('.img__venus');
-   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 2 * 1000;
+   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 4 * 1000;
    var currentImage_1 = 0;
    (function showNextImage() {
       
@@ -39,7 +39,7 @@
 
    var backgrounds_2 = ['./assets/solaris/img/earth2.png','./assets/solaris/img/card__earth.jpg']
    var planet_image_2  = document.querySelector('.img__earth');
-   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 2 * 1000;
+   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 4 * 1000;
    var currentImage_2 = 0;
    (function showNextImage() {
       planet_image_2.style.backgroundImage = 'url(' + backgrounds_2[currentImage_2] + ')'
@@ -77,7 +77,7 @@
    './assets/solaris/img/card__jupiter.jpg'
    ]
    var planet_image_4  = document.querySelector('.img__jupiter');
-   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 2 * 1000;
+   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 4 * 1000;
    var currentImage_4 = 0;
    (function showNextImage() {
       planet_image_4.style.backgroundImage = 'url(' + backgrounds_4[currentImage_4] + ')'
@@ -97,41 +97,25 @@
    './assets/solaris/img/card__saturn.jpg'
    ]
    var planet_image_5  = document.querySelector('.img__saturn');
-   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 2 * 1000;
+   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 4 * 1000;
    var currentImage_5 = 0;
    (function showNextImage() {
-      
-      if (window.matchMedia("(min-width: 1200px)").matches) {
-         planet_image_5.style.backgroundImage = 'url(' + backgrounds_5[currentImage_5] + ')',
-         planet_image_5.style.width = '20vw';
-         planet_image_5.style.height = '15vw';
-         planet_image_5.style.margin = '0 -4vw';
-         planet_image_5.style.backgroundSize = 'contain';
-         currentImage_5 += 1
-         if (currentImage_5 == backgrounds_5.length) {
-            currentImage_5 = 0;
-            planet_image_5.style.width = '10vw';
-            planet_image_5.style.height = '1vw';
-            planet_image_5.style.margin = '6vw 1vw';
-            planet_image_5.style.backgroundSize = 'cover';
-         }
-       } if(window.matchMedia("(min-width: 300px)").matches) {
-            planet_image_5.style.backgroundImage = 'url(' + backgrounds_5[currentImage_5] + ')',
-            planet_image_5.style.width = '20vw';
-            planet_image_5.style.height = '15vw';
-            planet_image_5.style.margin = '0 -4vw';
-            planet_image_5.style.backgroundSize = 'contain';
-            currentImage_5 += 1
-            if (currentImage_5 == backgrounds_5.length) {
-               currentImage_5 = 0;
-               planet_image_5.style.width = '10vw';
-               planet_image_5.style.height = '1vw';
-               planet_image_5.style.margin = '0 1vw';
-               planet_image_5.style.backgroundSize = 'cover';
-            }
+      planet_image_5.style.backgroundImage = 'url(' + backgrounds_5[currentImage_5] + ')',
+      planet_image_5.style.width = '20vw';
+      planet_image_5.style.height = '14vw';
+      planet_image_5.style.margin = '0 -4vw';
+      planet_image_5.style.backgroundSize = 'contain';
+      currentImage_5 += 1
+      if (currentImage_5 == backgrounds_5.length) {
+         currentImage_5 = 0;
+         planet_image_5.style.width = '9vw';
+         planet_image_5.style.height = '1vw';
+         planet_image_5.style.margin = '6.5vw 1vw';
+         planet_image_5.style.backgroundSize = 'cover';
       }
+      
       setTimeout(showNextImage, BACKGROUND_IMAGE_CHANGE_INTERVAL)
-   });
+   }());
 
 
 
@@ -141,7 +125,7 @@
 
    ]
    var planet_image_6  = document.querySelector('.img__uranus');
-   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 2 * 1000;
+   var BACKGROUND_IMAGE_CHANGE_INTERVAL = 4 * 1000;
    var currentImage_6 = 0;
    (function showNextImage() {
       planet_image_6.style.backgroundImage = 'url(' + backgrounds_6[currentImage_6] + ')'
