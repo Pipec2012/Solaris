@@ -81,7 +81,7 @@ $(function () {
 // }
     
 
-    $("#form").submit(function() {
+    $(".form").submit(function() {
 		$.ajax({
 			type: "POST",
 			url: "http://solarischair.ru/mail.php",
@@ -89,7 +89,7 @@ $(function () {
 		}).done(function() {
 			$(this).find("input").val("");
 			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-			$("#form").trigger("reset");
+			$(".form").trigger("reset");
 		});
 		return false;
 	});
