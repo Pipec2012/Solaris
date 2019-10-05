@@ -95,7 +95,109 @@ $(function () {
 		return false;
 	});
     
+    $("#form_2").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "http://solarischair.ru/mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form_2").trigger("reset");
+		});
+		return false;
+    });
     
+    $("#form_3").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "http://solarischair.ru/mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form_3").trigger("reset");
+		});
+		return false;
+    });
+
+
+    $("#form_4").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "http://solarischair.ru/mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form_4").trigger("reset");
+		});
+		return false;
+    });
+
+
+    $("#form_5").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "http://solarischair.ru/mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form_5").trigger("reset");
+		});
+		return false;
+    });
+
+
+    $("#form_6").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "http://solarischair.ru/mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form_6").trigger("reset");
+		});
+		return false;
+    });
+
+
+    $("#form_7").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "http://solarischair.ru/mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form_7").trigger("reset");
+		});
+		return false;
+    });
+
+
+    $("#form_8").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "http://solarischair.ru/mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form_8").trigger("reset");
+		});
+		return false;
+    });
+
+
+
+
+
+
+
+
     if ( document.body.clientWidth <= 700 ) {
         $(function(){
       
