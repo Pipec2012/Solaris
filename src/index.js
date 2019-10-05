@@ -33,7 +33,10 @@ $(function () {
                 scrollingSpeed: 1000,
                 touchSensitivity: 10
             });
+        
         } 
+
+        
         
     });
     
@@ -91,6 +94,40 @@ $(function () {
 		});
 		return false;
 	});
+    
+    
+    if ( document.body.clientWidth <= 700 ) {
+        $(function(){
+      
+            $('[href="#home"]').on('click', function(block0){
+               $('html,body').stop().animate({ scrollTop: $('[data-anchor="block0"]').offset().top }, 1000);
+               block0.preventDefault();
+            });
+            
+            });
+        $(function(){
+
+            $('[href="#product"]').on('click', function(block1){
+              $('html,body').stop().animate({ scrollTop: $('[data-anchor="block1"]').offset().top }, 1000);
+              block1.preventDefault();
+            });
+            
+            });
+         $(function(){
+      
+            $('[href="#project"]').on('click', function(block2){
+               $('html,body').stop().animate({ scrollTop: $('[data-anchor="block2"]').offset().top }, 1000);
+               block2.preventDefault();
+            });
+            
+            });
+         
+            
+    }
+
+   
+
+
 
 
 });
