@@ -166,7 +166,7 @@
       setTimeout(showNextImage, BACKGROUND_IMAGE_CHANGE_INTERVAL)
    }());
 
-
+   
 
    // var backgrounds_7 = [
    // './assets/solaris/img/neptune.png',

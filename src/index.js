@@ -85,7 +85,7 @@ $(function () {
     $("#form").submit(function() {
 		$.ajax({
 			type: "POST",
-			url: "http://solarischair.ru/mail.php",
+			url: "https://solarischair.ru/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
@@ -98,7 +98,7 @@ $(function () {
     $("#form_2").submit(function() {
 		$.ajax({
 			type: "POST",
-			url: "http://solarischair.ru/mail.php",
+			url: "https://solarischair.ru/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
@@ -111,7 +111,7 @@ $(function () {
     $("#form_3").submit(function() {
 		$.ajax({
 			type: "POST",
-			url: "http://solarischair.ru/mail.php",
+			url: "https://solarischair.ru/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
@@ -125,7 +125,7 @@ $(function () {
     $("#form_4").submit(function() {
 		$.ajax({
 			type: "POST",
-			url: "http://solarischair.ru/mail.php",
+			url: "https://solarischair.ru/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
@@ -139,7 +139,7 @@ $(function () {
     $("#form_5").submit(function() {
 		$.ajax({
 			type: "POST",
-			url: "http://solarischair.ru/mail.php",
+			url: "https://solarischair.ru/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
@@ -153,7 +153,7 @@ $(function () {
     $("#form_6").submit(function() {
 		$.ajax({
 			type: "POST",
-			url: "http://solarischair.ru/mail.php",
+			url: "https://solarischair.ru/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
@@ -167,7 +167,7 @@ $(function () {
     $("#form_7").submit(function() {
 		$.ajax({
 			type: "POST",
-			url: "http://solarischair.ru/mail.php",
+			url: "https://solarischair.ru/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
@@ -181,7 +181,7 @@ $(function () {
     $("#form_8").submit(function() {
 		$.ajax({
 			type: "POST",
-			url: "http://solarischair.ru/mail.php",
+			url: "https://solarischair.ru/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");

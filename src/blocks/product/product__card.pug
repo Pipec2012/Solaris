@@ -32,9 +32,9 @@ mixin product__card(options, slider)
             li - Вес: 31 кг.
          form#form.card__form(autocomplete="off")
             
-            input(type="text" name="name" placeholder="Ваше имя" required)
+            input(type="text" name="name" placeholder="Ваше имя" required pattern="^[А-Яа-яЁё\s]+$" minlength="3" maxlength="18")
             
-            input(type="tel" name="phone" placeholder="Ваш телефон" required)
+            input(type="tel" name="phone" placeholder="Ваш телефон" required  pattern="^[ 0-9]+$" minlength="6" maxlength="18")
             input.order--none(type="text" name="order" value="Кресло пузырь - подвесное к потолку")
             button.card__btn Купить
             

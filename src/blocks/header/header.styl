@@ -44,7 +44,12 @@
 	padding-top: 1vw
 	position: fixed
 	top: 0
-	
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; 
 	text-align: center;
 
 .menu:after
@@ -84,6 +89,7 @@
 	position: absolute
 	margin-top: 5vw
 	transition-delay: 0.5s
+	
 .submenu
 	
 	background: rgba(0, 0, 0, 0.55)
@@ -101,6 +107,7 @@
 	// left: 4.5vw
 	// top: 2vw
 	letter-spacing: 0
+	
 
 .submenu__link
 	color: white
